@@ -27,7 +27,7 @@
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -116,9 +116,13 @@
               <div class="col-md-4">
                 <div class="item">
                   <img src="images/item-1.png" class="img-fluid" alt="">
-                  <div class="item_icons">
+                  <div class="item_icons-1">
                     <ul>
                       <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="item_icons-2">
+                    <ul>
                       <li><a href=""><i class="fas fa-link"></i></a></li>
                     </ul>
                   </div>
@@ -129,9 +133,13 @@
               <div class="col-md-4">
                 <div class="item">
                   <img src="images/item-2.png" class="img-fluid"  alt="">
-                  <div class="item_icons">
+                  <div class="item_icons-1">
                     <ul>
                       <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="item_icons-2">
+                    <ul>
                       <li><a href=""><i class="fas fa-link"></i></a></li>
                     </ul>
                   </div>
@@ -140,9 +148,13 @@
               <div class="col-md-4">
                 <div class="item">
                   <img src="images/item-3.png" class="img-fluid"  alt="">
-                  <div class="item_icons">
+                  <div class="item_icons-1">
                     <ul>
                       <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="item_icons-2">
+                    <ul>
                       <li><a href=""><i class="fas fa-link"></i></a></li>
                     </ul>
                   </div>
@@ -151,9 +163,13 @@
               <div class="col-md-4">
                 <div class="item">
                   <img src="images/item-4.png" class="img-fluid"  alt="">
-                  <div class="item_icons">
+                  <div class="item_icons-1">
                     <ul>
                       <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="item_icons-2">
+                    <ul>
                       <li><a href=""><i class="fas fa-link"></i></a></li>
                     </ul>
                   </div>
@@ -162,9 +178,13 @@
               <div class="col-md-4">
                 <div class="item">
                   <img src="images/item-5.png" class="img-fluid"  alt="">
-                  <div class="item_icons">
+                  <div class="item_icons-1">
                     <ul>
                       <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="item_icons-2">
+                    <ul>
                       <li><a href=""><i class="fas fa-link"></i></a></li>
                     </ul>
                   </div>
@@ -173,9 +193,13 @@
               <div class="col-md-4">
                 <div class="item">
                   <img src="images/item-6.png" class="img-fluid"  alt="">
-                  <div class="item_icons">
+                  <div class="item_icons-1">
                     <ul>
                       <li><a href=""><i class="fas fa-search-plus"></i></a></li>
+                    </ul>
+                  </div>
+                  <div class="item_icons-2">
+                    <ul>
                       <li><a href=""><i class="fas fa-link"></i></a></li>
                     </ul>
                   </div>
@@ -185,22 +209,27 @@
           </div>
         </section>
 
-        <section class="form">
+
+        <section class="contact_section py-5">
           <div class="container">
-            <div class="row f_height">
-              <div class="col-md-6 m-auto text-center">
-                <h1>Stay with us</h1>
-                <p>We ensure quailty & support</p>
-                 <form>
-                  <input type="text" placeholder="Full Name">
-                  <input type="text" placeholder="Email Address">
-                  <input type="text" placeholder="Message">
-                 </form>
-                 <div class="news">
-                  <label><input type="checkbox">Subscribe Newsletter</label>
-                  
-                  <a href="" class="btn btn_send">Send</a>
-                 </div>
+            <div class="row text-center">
+              <h1>Stay with us</h1>
+              <p>We ensure quailty & support</p>
+            </div>
+            <div class="row">
+              <div class="main col-md-6 m-auto">
+                <form action="">
+                  <input type="text" class="form-control mb-3" placeholder="Full Name">
+                  <input type="text" class="form-control mb-3" placeholder="Email Address">
+                  <textarea name="" class="form-control mb-3" id="" placeholder="Message" cols="30" rows="10"></textarea>
+                      <div class="d-flex justify-content-between">
+                        <div class="check">
+                          <input type="checkbox">
+                          <p>Subscribe Newsletter</p>
+                        </div>
+                        <input type="submit" class="submit" value="Send">
+                      </div>
+                </form>
               </div>
             </div>
           </div>

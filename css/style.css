@@ -17,6 +17,9 @@ header{
     font-weight: 700;
     text-transform: uppercase;
 }
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #202020;
+}
 .banner{
     background-image: url(../images/banner_background.png);
     background-repeat: no-repeat;
@@ -151,9 +154,6 @@ margin-top: 22px;
 
 margin-bottom: 12px;
 }
-.feature p{
-
-}
 .showcase{
 
 margin-top: 40px;
@@ -204,7 +204,7 @@ margin-bottom: 60px;
 .item:hover::after{
     width: 50%;   
 }
-.item_icons{
+.item_icons-1{
 opacity: 0;
 transition: .5s all ease-in-out;
 position: absolute;
@@ -213,9 +213,9 @@ top: 50%;
 
 left:0%;
 
-transform: translate(-50%, -50%);
+transform: translate(-45%, -50%);
 }
-.item_icons ul{
+.item_icons-1 ul{
     
 list-style: none;
     
@@ -229,7 +229,7 @@ justify-content: space-between;
     
 width: 70px;
 }
-.item_icons ul li{
+.item_icons-1 ul li{
     
 height: 30px;
     
@@ -240,76 +240,146 @@ display: flex;
 justify-content: center;
     
 align-items: center;
-    z-index: ;
 border: 2px solid #fff;
 border-radius: 3px;
 }
-.item_icons ul li a{
+.item_icons-1 ul li a{
     
 color: #fff;
 }
-.item:hover .item_icons{
+.item_icons-2{
+    opacity: 0;
+    transition: .5s all ease-in-out;
+    position: absolute;
+    
+    top: 50%;
+    
+    right:0%;
+    
+    transform: translate(45%, -50%);
+    }
+    .item_icons-2 ul{
+        
+    list-style: none;
+        
+    padding: 0;
+        
+    margin: 0;
+        
+    display: flex;
+        
+    justify-content: space-between;
+        
+    }
+    .item_icons-2 ul li{
+        
+    height: 30px;
+        
+    width: 30px;
+        
+    display: flex;
+        
+    justify-content: center;
+        
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    }
+    .item_icons-2 ul li a{
+        
+    color: #fff;
+ }
+
+
+.item:hover .item_icons-1{
     opacity: 1;
     left: 50%;
     z-index: 1;
 }
-.form{
+.item:hover .item_icons-2{
+    opacity: 1;
+    right: 45%;
+    z-index: 1;
+}
+.contact_section{
     background-image: url(../images/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-
+    margin-top: 85px;
+    z-index: 1;
 }
-.f_height{
-    min-height: 90vh;
+.contact_section form{
+    background: transparent;
 }
-.form{
-
-margin-top: 85px;
+.contact_section form input{
+    background: transparent;
+    border: none;
+    border: 1px solid #fff;
 }
-.form h1{
+.contact_section textarea{
+   
+    background: transparent;
+    border: none;
+    border: 1px solid #fff;
+    
+    color: #999999;
+}
+.contact_section input:focus {
+    outline: none;
+    background: transparent;
+}
+.contact_section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #2d3950c9;
+    z-index: -1;
+}
+.contact_section h1{
     
 color: #fff;
 }
-.form p{
+.contact_section p{
     
 color: #999999;
 }
-form{
-}
-form input{
-    
-width: 100%;
+.contact_section input{
     
 margin: 5px 0;
     
 padding: 10px 8px;
     
 background: transparent;
-    
+
 color: #999999;
 }
-form input:last-child{
-    
-padding: 55px 8px;
-}
-.news{
-
-display: flex;
-
-justify-content: space-between;
-
-margin-top: 18px;
-}
-.news p{
+.check p{
     color: #ffffff;
+    display: inline;
+    margin-left: 5px;
 }
-.news button{
+.check input{
     
 background: transparent;
     
-padding: 6px 35px;
+}
+.submit{
+    margin: 5px 0 !important;
+    padding: 8px 35px !important;
+    background: transparent !important;
+    color: #fff !important;
+    border: none !important;
+    border: 1px solid #15a4fa !important;
+}
+.submit:hover{
+    color: #fff;
+    background: #15a4fa !important;
+    transition: .4s all ease-in-out;
 }
 .btn_send{
     background: transparent;
@@ -321,29 +391,11 @@ padding: 6px 35px;
     background-color: #24a3f0;
     color: #ffffff;
 }
-label{
-    
-background: antiquewhite;
-    
-display: flex;
-    
-justify-content: space-between;
-    
-width: 32%;
-    
-align-items: center;
-}
 footer{
 
 padding: 10px 0;
 
 background-color: #f6f9f9;
-}
-.copyright{
-    
-}
-.copyright p{
-
 }
 .social ul{
     
@@ -367,9 +419,14 @@ justify-content: space-between;
     text-align: center;
     padding: 8px;
 }
-.social ul li a{
-    
+.form-control:focus {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
 }
-.social{
+.contact_section input:focus{
+    color: #fff;
     
 }
